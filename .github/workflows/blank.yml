@@ -1,8 +1,13 @@
 name: Hello World
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
      runs-on: ubuntu-latest
      steps:
        - name: Hello step
          run: echo :" welocome to Github action"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test phase
+        run: echo :"Running test"
